@@ -1,46 +1,122 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Burst</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/f056a62cc9.js" crossorigin="anonymous"></script>
 
-    <!-- DaisyUI with tailwindcss -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI with tailwindcss -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- custom tailwind styles -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              color: ""
-            }
+  <!-- custom tailwind styles -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            color: ""
           }
         }
       }
-    </script>
+    }
+  </script>
 
-    <!-- custom css -->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-      .font-lato {
-        font-family: 'Lato', sans-serif;
+  <!-- custom css -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+
+    @media screen and (max-width: 639px) {
+      /* navbar */
+      nav {
+        margin-top: 0;
       }
-    </style>
+      .navbar-center {
+        flex-grow: 1;
+      }
+      nav label.btn {
+        padding-right: 0;
+      }
+      .dropdown ul {
+        right: 0;
+      }
+    }
+  </style>
 </head>
-<body class="font-lato">
-    <header class="container mx-auto"></header>
 
-    <main class="container mx-auto"></main>
-    
-    <footer></footer>
+<body class="font-lato">
+  <header class="container mx-auto">
+    <!-- navigation bar -->
+    <nav class="xl:my-7 lg:my-3 md:my-3 my-3 2xl:mx-0 xl:mx-0 lg:mx-3 md:mx-3 mx-3">
+      <div
+        class="navbar 2xl:bg-[#F85559] xl:bg-[#F85559] lg:bg-[#F85559] md:bg-[#F85559] 2xl:px-4 xl:px-4 lg:px-4 px-0 2xl:py-3 py-0 2xl:rounded-full xl:rounded-full lg:rounded-full md:rounded-full md:justify-between">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white text-[16px]">
+            <li><a class="xl:pl-4 lg:pl-4 pl-1">Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-center 2xl:flex-row xl:flex-row lg:flex-row md:flex-row flex-row-reverse">
+          <div class="dropdown flex-1 text-right">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  w-60">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              <li>
+                <div class="flex items-center">
+                  <input type="text" placeholder="Search here" class="outline-0 p-2">
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class="normal-case text-xl flex items-center gap-3"><img src="./images/logo.png" alt="logo" class="w-10">
+            <h3 class="2xl:text-white xl:text-white lg:text-white md:text-white text-3xl font-bold">Fruit Burst</h3>
+          </a>
+        </div>
+
+        <div class="navbar-end 2xl:flex xl:flex lg:flex md:flex hidden">
+          <div class="flex items-center bg-white py-2 px-10 rounded-full mr-2 xl:mr-0 lg:mr-0 md:mr-4">
+            <input type="text" placeholder="Search here" class="outline-0">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto"></main>
+
+  <footer></footer>
 </body>
 </html>
