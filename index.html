@@ -36,7 +36,7 @@
       font-family: 'Lato', sans-serif;
     }
     .team-container {
-      background-image: url("./images/banner1.png");
+      background-image: url("./images/team.png");
     }
 
     @media screen and (max-width: 767px) {
@@ -59,11 +59,23 @@
       .fruit-container {
         display: none !important;
       }
+      .feature-text-one {
+        order: 2;
+      }
+      .feature-image {
+        order: 1;
+      }
+      .feature-text-two {
+        order: 3;
+      }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
       .fruit-container {
         display: none !important;
+      }
+      .feature-image {
+        display: none;
       }
     }
   </style>
@@ -514,7 +526,7 @@
     <!-- our team -->
     <section class="team-container bg-no-repeat bg-cover 2xl:mx-0 xl:mx-0 lg:mx-3 md:mx-3 mx-3 2xl:mt-20 xl:mt-20 lg:mt-16 md:mt-16 mt-14">
       <div class="bg-light-black rounded-lg flex items-center justify-center">
-        <div class="text-white text-center w-[80%] mx-auto 2xl:py-16 xl:py-16 lg:py-14 md:py-14 py-14">
+        <div class="text-white text-center w-[80%] mx-auto 2xl:py-20 xl:py-20 lg:py-16 md:py-16 py-14">
           <h2 class="font-bold 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-4xl">Meet with our team</h2>
           <p class="font-medium 2xl:mt-3 xl:mt-3 lg:mt-3 md:mt-2 mt-2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
@@ -562,6 +574,74 @@
                 <li><a href="" class="flex items-center justify-center h-8 w-8 bg-[#F85559] text-white rounded-full"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="" class="flex items-center justify-center h-8 w-8 bg-[#F85559] text-white rounded-full"><i class="fa-brands fa-linkedin-in"></i></a></li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why choose us -->
+    <section class="2xl:mx-0 xl:mx-0 lg:mx-3 md:mx-3 mx-3 2xl:mt-20 xl:mt-20 lg:mt-16 md:mt-16 mt-14">
+      <div class="text-center">
+        <h2 class="font-bold 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-4xl">Why Choose Us</h2>
+        <p class="w-9/12 mx-auto font-medium 2xl:mt-3 xl:mt-3 lg:mt-3 md:mt-2 mt-2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+
+      <div class="grid 2xl:gap-6 xl:gap-6 lg:gap-2 md:gap-6 gap-6 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:mt-7 xl:mt-7 lg:mt-6 md:mt-6 mt-6">
+        <div class="feature-text-one flex flex-col justify-center 2xl:gap-7 xl:gap-7 lg:gap-4 md:gap-6 gap-5 2xl:text-left xl:text-left lg:text-center md:text-center text-center">
+          <!-- feature 1 -->
+          <div class="flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col 2xl:gap-4 xl:gap-4 lg:gap-2 items-center">
+            <p class="2xl:h-14 xl:h-[47px] lg:h-10 md:h-10 h-[45px] 2xl:w-20 xl:w-20 lg:w-12 md:w-10 w-12 flex items-center justify-center rounded-full bg-[#E8E8E8] text-black"><i class="fa-solid fa-user-group"></i></p>
+            <div>
+              <h4 class="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl text-[23px] font-semibold border-b border-[#b0b0b0] inline-block pb-2 mb-2">Dedicated Team</h4>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <!-- feature 2 -->
+          <div class="flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col 2xl:gap-4 xl:gap-4 lg:gap-2 items-center">
+            <p class="2xl:h-14 xl:h-[47px] lg:h-10 md:h-10 h-[45px] 2xl:w-20 xl:w-20 lg:w-12 md:w-10 w-12 flex items-center justify-center rounded-full bg-[#E8E8E8] text-black"><i class="fa-regular fa-heart"></i></p>
+            <div>
+              <h4 class="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl text-[23px] font-semibold border-b border-[#b0b0b0] inline-block pb-2 mb-2">Fresh is Best</h4>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <!-- feature 3 -->
+          <div class="2xl:flex xl:flex lg:hidden md:flex 2xl:flex-row xl:flex-row lg:flex-col md:flex-col flex-col 2xl:gap-4 xl:gap-4 lg:gap-2 items-center">
+            <p class="mx-auto 2xl:h-14 xl:h-[47px] lg:h-10 md:h-10 h-[45px] 2xl:w-20 xl:w-20 lg:w-12 md:w-10 w-12 flex items-center justify-center rounded-full bg-[#E8E8E8] text-black"><i class="fa-solid fa-gift"></i></p>
+            <div>
+              <h4 class="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl text-[23px] font-semibold border-b border-[#b0b0b0] inline-block pb-2 mb-2">Gift Certificates</h4>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center feature-image">
+          <img src="./images/whychoose1.png" alt="feature-image" class="inline-block">
+        </div>
+
+        <div class="feature-text-two flex flex-col justify-center 2xl:gap-7 xl:gap-7 lg:gap-4 md:gap-6 gap-5 2xl:text-right xl:text-right lg:text-center md:text-center text-center">
+          <!-- feature 1 -->
+          <div class="flex 2xl:flex-row-reverse xl:flex-row-reverse lg:flex-col md:flex-col flex-col items-center 2xl:gap-4 xl:gap-4 lg:gap-2">
+            <p class="2xl:h-14 xl:h-[47px] lg:h-10 md:h-10 h-[45px] 2xl:w-20 xl:w-20 lg:w-12 md:w-10 w-12 flex items-center justify-center rounded-full bg-[#E8E8E8] text-black"><i class="fa-solid fa-users"></i></p>
+            <div>
+              <h4 class="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl text-[23px] font-semibold border-b border-[#b0b0b0] inline-block pb-2 mb-2">Integrated Supplier</h4>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <!-- feature 2 -->
+          <div class="flex 2xl:flex-row-reverse xl:flex-row-reverse lg:flex-col md:flex-col flex-col items-center 2xl:gap-4 xl:gap-4 lg:gap-2">
+            <p class="2xl:h-14 xl:h-[47px] lg:h-10 md:h-10 h-[45px] 2xl:w-20 xl:w-20 lg:w-12 md:w-10 w-12 flex items-center justify-center rounded-full bg-[#E8E8E8] text-black"><i class="fa-solid fa-ice-cream"></i></p>
+            <div>
+              <h4 class="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl text-[23px] font-semibold border-b border-[#b0b0b0] inline-block pb-2 mb-2">Sustainable Practice</h4>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <!-- feature 3 -->
+          <div class="2xl:flex xl:flex lg:hidden md:flex 2xl:flex-row-reverse xl:flex-row-reverse lg:flex-col md:flex-col items-center 2xl:gap-4 xl:gap-4 lg:gap-2">
+            <p class="mx-auto 2xl:h-14 xl:h-[47px] lg:h-10 md:h-10 h-[45px] 2xl:w-20 xl:w-20 lg:w-12 md:w-10 w-12 flex items-center justify-center rounded-full bg-[#E8E8E8] text-black"><i class="fa-regular fa-thumbs-up"></i></p>
+            <div>
+              <h4 class="2xl:text-2xl xl:text-2xl lg:text-xl md:text-xl text-[23px] font-semibold border-b border-[#b0b0b0] inline-block pb-2 mb-2">The Benefits Only</h4>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
             </div>
           </div>
         </div>
